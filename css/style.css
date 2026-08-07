@@ -77,7 +77,7 @@ transform:translateY(-3px);
 box-shadow:0 0 20px rgba(255,153,0,.5);
 }
 
-/* SOCIAL */
+/* SOCIAL BAR */
 
 .social-bar{
 position:fixed;
@@ -168,6 +168,7 @@ text-decoration:none;
 border-radius:8px;
 font-weight:bold;
 transition:.3s;
+display:inline-block;
 }
 
 .btn-main:hover{
@@ -188,7 +189,7 @@ transition:.3s;
 background:#ff9900;
 }
 
-/* SECTIONS */
+/* ALLGEMEINE SEKTIONEN */
 
 section{
 padding:120px 10%;
@@ -198,6 +199,39 @@ h2{
 font-size:56px;
 text-align:center;
 margin-bottom:50px;
+}
+
+/* SHOWCASE BILDER */
+
+.showcase-image{
+padding:80px 10%;
+text-align:center;
+}
+
+.showcase-image img{
+width:100%;
+max-width:1200px;
+height:auto;
+border-radius:12px;
+border:1px solid rgba(255,153,0,.2);
+box-shadow:0 0 30px rgba(0,0,0,.4);
+}
+
+.showcase-text{
+margin-top:25px;
+}
+
+.showcase-text h2{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.showcase-text p{
+font-size:18px;
+line-height:1.8;
+color:#c0c0c0;
+max-width:700px;
+margin:auto;
 }
 
 /* TEAM */
@@ -233,6 +267,21 @@ color:#ff9900;
 color:#c0c0c0;
 }
 
+.team-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+margin-top:15px;
+border:2px solid rgba(255,153,0,.2);
+transition:.3s;
+}
+
+.team-card img:hover{
+border-color:#ff9900;
+box-shadow:0 0 20px rgba(255,153,0,.4);
+}
+
 /* DISCORD */
 
 .discord{
@@ -260,7 +309,7 @@ margin-bottom:30px;
 color:#c0c0c0;
 }
 
-/* RULES */
+/* REGELN */
 
 .rule-box{
 background:#151515;
@@ -298,7 +347,7 @@ margin-bottom:10px;
 color:white;
 }
 
-/* CONTACT */
+/* KONTAKT */
 
 .contact form{
 display:flex;
@@ -336,6 +385,12 @@ transition:.3s;
 
 button:hover{
 background:#ffae33;
+}
+
+/* IMPRESSUM */
+
+.impressum{
+text-align:center;
 }
 
 /* FOOTER */
@@ -398,6 +453,22 @@ font-size:42px;
 
 .team-grid{
 grid-template-columns:1fr;
+}
+
+.showcase-image{
+padding:60px 20px;
+}
+
+.showcase-text h2{
+font-size:32px;
+}
+
+.showcase-text p{
+font-size:16px;
+}
+
+.team-card img{
+height:180px;
 }
 
 }
