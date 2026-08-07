@@ -77,6 +77,22 @@ z-index:5;
 max-width:650px;
 }
 
+.hero-content::before{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:radial-gradient(
+circle,
+rgba(255,153,0,.18) 0%,
+rgba(255,153,0,.08) 35%,
+transparent 70%
+);
+left:-150px;
+top:-100px;
+z-index:-1;
+}
+
 .small-title{
 color:#ff9900;
 font-weight:bold;
@@ -96,8 +112,10 @@ color:#ff9900;
 
 .hero p{
 margin-top:25px;
-font-size:18px;
-line-height:1.7;
+font-size:20px;
+line-height:1.8;
+max-width:550px;
+color:#d0d0d0;
 }
 
 .buttons{
@@ -225,7 +243,11 @@ background:#111;
 @media(max-width:768px){
 
 .hero h1{
-font-size:50px;
+font-size:140px;
+font-weight:900;
+line-height:.9;
+text-transform:uppercase;
+letter-spacing:-4px;
 }
 
 .navbar{
